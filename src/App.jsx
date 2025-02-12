@@ -1,6 +1,11 @@
 import './App.css'
 import plombier from "./assets/PlombierAPropos.png"
 import { Wrench, Droplet,  Flame, Toilet, ShowerHead as Shower, AlertCircle, PhoneCall, Clock } from 'lucide-react';
+import Clement from "./assets/Clement.png"
+import Francois from "./assets/Francois.png"
+import Jean from "./assets/Jean.png"
+import Project1 from "./assets/Project1.png"
+import Project2 from "./assets/Project2.png"
 
 function App() {
   const services = [
@@ -64,7 +69,7 @@ function App() {
       </nav>
       <header>
         <div className='leftSideHeader'>
-          <h2 className='h2Titlte'>Plomberie 24/24 - 7/7</h2>
+          <h2 className='h2Title'>Plomberie 24/24 - 7/7</h2>
           <p className='text'>Bienvenue chez Paris - Plomberie, votre plombier de confiance à Paris. Nous sommes fiers de fournir des services de qualité en matière de dépannage, d’urgence et de réparation de plomberie. </p>
           <button className='btnContactezNous btnHeader'>
             <a href="tel:+33769084998" class="a">Appelez-nous</a>
@@ -91,7 +96,7 @@ function App() {
         <img src={plombier} alt="plombier qui travaille" />
         <div className="aProposContent">
           <p className='smallUnderText underTxtAPropos'>à propos</p>
-          <h2 className='h2Titlte h2aPropos'>Votre partenaire <br /> Plomberie</h2>
+          <h2 className='h2Title h2aPropos'>Votre partenaire <br /> Plomberie</h2>
           <div className="about-item">
             <div>
               <h3 className='h3aPropos'>10 ans d’expérience</h3>
@@ -141,6 +146,58 @@ function App() {
         </div>
       </section>
     </div>
+
+    <section className="recapservice-container">
+      <div className="recapservice-content">
+        <div className="service-item">
+          <h3>Super</h3>
+          <p>Un service au top ! Rapide, efficace et professionnel, avec une vraie attention aux détails.</p>
+        </div>
+        <div className="divider"></div>
+        <div className="service-item">
+          <h3>Service rapide</h3>
+          <p>Une expérience au-delà de mes attentes ! L’équipe est professionnelle, réactive et à l’écoute.</p>
+        </div>
+        <div className="divider"></div>
+        <div className="service-item">
+          <h3>Pas cher</h3>
+          <p>Service impeccable du début à la fin ! L’équipe est rapide, efficace et très professionnelle.</p>
+        </div>
+      </div>
+    </section>
+
+    <section className='notreEquipe'>
+        <p className='smallUnderText underTxtNotreEkip'>Notre équipe</p>
+      <h2 className='h2Title h2Ekip'>Rencontrez nos experts</h2>
+      <p className='ekipTxt'>Nos professionnels qualifiés sont à votre écoute pour vous conseiller et vous accompagner à chaque étape. Avec leur expertise et leur savoir-faire, ils vous apportent des solutions adaptées à vos besoins, alliant qualité, efficacité et innovation.</p>
+      <div className='imgTeamWrappe'>
+        <img src={Clement} alt="Chef d'equipe" />
+        <img src={Francois} alt="Plombier 2" />
+        <img src={Jean} alt=" Plombier 3" />
+      </div>
+    </section>
+
+    <section className="nosProjets">
+      <div className="projet-header">
+        <p className="smallUnderText underTxtProject">Projets</p>
+        <div className="projet-title-container">
+          <h2 className="h2Title">Nos derniers projets</h2>
+          <p className="underTxtProject">
+            Chaque <i>réalisation</i> est le reflet de notre savoir-faire et de notre engagement envers la qualité.
+          </p>
+        </div>
+      </div>
+      <div className="imgNosProjetsWrapper">
+      <img src={Project1} alt="Images de nos projets" className="large-image" />
+      <img src={Project2} alt="Images de nos projets" className="small-image" />
+      </div>
+      <div className="button-container">
+        <button className="voirPlusBtn">Voir tout</button>
+      </div>
+    </section>
+    <footer>
+      <p>PAS LE TEMPS JE FINI APRES </p>
+    </footer>
     </div>
   )
 }
