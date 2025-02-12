@@ -1,0 +1,185 @@
+nav{
+  background-color: #141A25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  margin: 0;
+  color: white;
+  font-size: 4.6rem;
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+                                                  /* HEADER SECTION */
+header{
+  background: url("./assets/PlombierMainBg.png") no-repeat center center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+.leftSideHeader{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.h2Titlte{
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+.text{
+  font-size: 1.3rem;
+  width: 22vw;
+  text-align: left;
+}
+.btnContactezNous{
+  height: 3em;
+  width: 15em;
+  border: none;
+  border-radius: 10em;
+  background: #050505;
+  font-size: 17px;
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 500;
+ }
+ .sizeBtn{
+  height: 8vh;
+  width: 16vw;
+  font-size: 1.7rem;
+}
+ .btnContactezNous:hover {
+  animation: shake3856 0.3s linear infinite both;
+ }
+ @keyframes shake3856 {
+  0% {
+   -webkit-transform: translate(0);
+   transform: translate(0);
+  }
+ 
+  20% {
+   -webkit-transform: translate(-2px, 2px);
+   transform: translate(-2px, 2px);
+  }
+ 
+  40% {
+   -webkit-transform: translate(-2px, -2px);
+   transform: translate(-2px, -2px);
+  }
+ 
+  60% {
+   -webkit-transform: translate(2px, 2px);
+   transform: translate(2px, 2px);
+  }
+ 
+  80% {
+   -webkit-transform: translate(2px, -2px);
+   transform: translate(2px, -2px);
+  }
+ 
+  100% {
+   -webkit-transform: translate(0);
+   transform: translate(0);
+  }
+ }
+.btnHeader{
+  background-color: #FF5C00;
+}
+.btnHeader:hover{
+  background-color: #FF772B;
+}
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.nombresGras {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  position: relative;
+}
+.smallUnderText {
+  font-size: 1rem;
+  color: #888;
+  font-weight: normal;
+  display: block;
+  margin-top: 3px;
+}
+.nombresGras:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  height: 56px; 
+  width: 2px;
+  background-color: #ccc;
+  transform: translateY(-50%);
+}
+.rigthSideHeader{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.h3Titlte{
+  font-size: 3rem;
+  margin-bottom: 0;
+  padding-bottom: 1vh;
+  border-bottom: 1px solid #ccc;
+}
+.orange-dot {
+  width: 26px;
+  height: 26px;
+  background-color: #FF5C00;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.smallUnderTextForH3{
+  font-size: 1.8rem;
+  color: #888;
+  font-weight: normal;
+  display: block;
+  margin-top: 3px;
+  padding-top: 1vh;
+}
+ul {
+  list-style: none; /* Supprime les puces par défaut */
+  padding: 0;
+  counter-reset: list-counter; /* Initialise un compteur */
+}
+
+ul li {
+  counter-increment: list-counter; /* Incrémente le compteur */
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc; /* Ajoute une ligne sous chaque élément */
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+ul li::before {
+  content: counter(list-counter) ". "; /* Ajoute le numéro */
+  font-weight: bold;
+  color: #333;
+}
+.headerBottomLine{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 11vh; /* Adjust thickness */
+  background-color: #1a1a1a; /* Adjust color */
+}
+                                                  /* A Propos */
