@@ -179,7 +179,7 @@ ul li::before {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 11vh; /* Adjust thickness */
+  height: 13vh; /* Adjust thickness */
   background-color: #1a1a1a; /* Adjust color */
 }
                                                   /* A Propos */
@@ -476,4 +476,16 @@ footer{
 }
 footer p{
   color: red;
+}
+
+@media (max-width: 1726px) {
+  /* .header{
+    overflow: hidden;
+    margin-bottom: 100vh;
+    color: red;
+  }
+  .rigthSideHeader{
+    color: red;
+    width: 22vw;
+  } */
 }
